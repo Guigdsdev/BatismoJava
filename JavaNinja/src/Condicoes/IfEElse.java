@@ -8,7 +8,6 @@ public class IfEElse {
         * Objetivo da aula -> Passar o ninja de nível de acordo com o número de missões.
         */
 
-
         String nome = "Naruto Uzumaki";
         int idade = 10;
         boolean hokage = false;
