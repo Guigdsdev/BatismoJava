@@ -26,6 +26,7 @@ public class Desafio {
         String nomeMissao3 = "Capturar pergaminho";
         char nivelMissao3 = 'A';
         boolean statusMissao3;
+
         // Ninja 1 -----------
 
         if(idadeNinja1 < 15 && nivelMissao1 == 'C' || nivelMissao1 == 'D'){
