@@ -46,7 +46,9 @@ public class Main {
                     String nome = sc.nextLine();
                     System.out.print("Idade do ninja: ");
                     int idade = sc.nextInt();
+                    System.out.println("Missão: ");
                     sc.nextLine();
+                    String missao = sc.nextLine();
                     System.out.print("Dificuldade Missão: ");
                     String nivelDificuldade = sc.nextLine();
                     System.out.print("Status Missão: ");
@@ -58,6 +60,7 @@ public class Main {
 
                     ninja.nome = nome;
                     ninja.idade = idade;
+                    ninja.missao = missao;
                     ninja.nivelDificuldade = nivelDificuldade;
                     ninja.statusMissao = statusMissao;
                     ninja.habilidadeEspecial = habilidadeEspecial;
