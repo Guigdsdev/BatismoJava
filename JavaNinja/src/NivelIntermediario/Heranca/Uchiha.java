@@ -1,4 +1,4 @@
-package NivelIntermediario.AulaTres;
+package NivelIntermediario.Heranca;
 
 
 public class Uchiha extends Ninja {
