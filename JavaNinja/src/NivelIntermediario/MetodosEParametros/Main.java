@@ -1,6 +1,4 @@
-package NivelIntermediario.AulaDois;
-
-import NivelIntermediario.AulaDois.Ninja;
+package NivelIntermediario.MetodosEParametros;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package NivelIntermediario.AulaDois;
+package NivelIntermediario.MetodosEParametros;
 
 public class Ninja {
 
