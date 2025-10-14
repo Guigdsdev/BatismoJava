@@ -1,4 +1,4 @@
-package NivelIntermediario.AulaQuatro;
+package NivelIntermediario.Interfaces;
 
 public class Haruno extends Ninja {
 
