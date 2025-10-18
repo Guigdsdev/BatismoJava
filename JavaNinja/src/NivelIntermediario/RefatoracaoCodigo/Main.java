@@ -6,7 +6,7 @@ public class Main {
         System.out.println("----------------- Naruto Uzumaki -----------------");
         Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da folha", 18, 30, NivelNinja.GENNIN, Bijuu.KURAMA);
         System.out.println(naruto.bijuu);
-        
+
         System.out.println("----------------- Sasuke Uchiha -----------------");
         Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da folha", 18, 20, NivelNinja.GENNIN);
         sasuke.habidadeEspecial();
