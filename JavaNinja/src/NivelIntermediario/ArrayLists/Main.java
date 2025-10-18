@@ -1,4 +1,4 @@
-package NivelIntermediario.ArratLists;
+package NivelIntermediario.ArrayLists;
 
 import java.util.ArrayList;
 import java.util.List;
