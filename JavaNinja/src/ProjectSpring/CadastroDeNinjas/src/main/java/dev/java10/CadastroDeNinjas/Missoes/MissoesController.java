@@ -1,14 +1,14 @@
-package dev.java10.CadastroDeNinjas;
+package dev.java10.CadastroDeNinjas.Missoes;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping
 @RestController
-public class NinjaController {
-    @GetMapping("/helloworld")
-    public String helloWorld(){
-        return "Hello World!";
+@RequestMapping
+public class MissoesController {
+    @GetMapping("/missoes")
+    public String missaoUm(){
+        return "Resgate o pergaminho";
     }
 }
