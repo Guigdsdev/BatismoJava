@@ -1,14 +1,29 @@
 package dev.java10.CadastroDeNinjas.Missoes;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/missao")
 public class MissoesController {
-    @GetMapping("/missoes")
-    public String missaoUm(){
-        return "Resgate o pergaminho";
+
+    @PostMapping("/criar")
+    public String adicionarMissao(){
+        return "missao adicionada";
+    }
+
+    @GetMapping("/listar")
+    public String mostrarMissoes(){
+        return "todas missoes";
+    }
+
+    @GetMapping("/listarID")
+    public String mostrarMissoesID(){
+        return "Mostrar missoes por ID";
+    }
+
+
+    @DeleteMapping("/deletarID")
+    public String deletarMissao(){
+        return "Deletar missao por ID";
     }
 }
