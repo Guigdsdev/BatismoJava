@@ -38,8 +38,8 @@ public class NinjaController {
         return "alterar ninja";
     }
     // Deletar ninja
-    @DeleteMapping("/deletarID")
-    public String deletarNinja(){
-        return "Deletar ninja";
+    @DeleteMapping("/deletar/{id}")
+    public void deletarNinja(@PathVariable Long id){
+        ninjaService.deletarNinja(id);
     }
 }
