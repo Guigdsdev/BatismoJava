@@ -14,8 +14,8 @@ public class MissoesController {
     }
 
     @PostMapping("/criar")
-    public String adicionarMissao(){
-        return "missao adicionada";
+    public MissoesModel adicionarMissao(@RequestBody MissoesModel missoesModel){
+        return missoesService.adicionarMissao(missoesModel);
     }
 
     @GetMapping("/listar")
