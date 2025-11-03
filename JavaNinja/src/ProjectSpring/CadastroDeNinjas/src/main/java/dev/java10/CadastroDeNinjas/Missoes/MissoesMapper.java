@@ -9,7 +9,6 @@ public class MissoesMapper {
         missoesModel.setId(missoesDTO.getId());
         missoesModel.setNomeMissao(missoesDTO.getNomeMissao());
         missoesModel.setDificuldadeMissao(missoesDTO.getDificuldadeMissao());
-        missoesModel.setNinjas(missoesDTO.getNinjas());
         return missoesModel;
     }
 
@@ -18,7 +17,6 @@ public class MissoesMapper {
         missoesDTO.setId(missoesModel.getId());
         missoesDTO.setNomeMissao(missoesModel.getNomeMissao());
         missoesDTO.setDificuldadeMissao(missoesModel.getDificuldadeMissao());
-        missoesDTO.setNinjas(missoesModel.getNinjas());
         return missoesDTO;
     }
 }
