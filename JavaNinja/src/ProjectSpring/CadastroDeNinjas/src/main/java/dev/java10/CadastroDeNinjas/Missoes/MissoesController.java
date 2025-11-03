@@ -14,17 +14,17 @@ public class MissoesController {
     }
 
     @PostMapping("/criar")
-    public MissoesModel adicionarMissao(@RequestBody MissoesModel missoesModel){
+    public MissoesDTO adicionarMissao(@RequestBody MissoesDTO missoesModel){
         return missoesService.adicionarMissao(missoesModel);
     }
 
     @GetMapping("/listar")
-    public List<MissoesModel> mostrarMissoes(){
+    public List<MissoesDTO> mostrarMissoes(){
         return missoesService.listarMissoes();
     }
 
     @GetMapping("/listar/{id}")
-    public MissoesModel listarMissaoId(@PathVariable Long id){
+    public MissoesDTO listarMissaoId(@PathVariable Long id){
         return missoesService.listarMissaoId(id);
     }
 
