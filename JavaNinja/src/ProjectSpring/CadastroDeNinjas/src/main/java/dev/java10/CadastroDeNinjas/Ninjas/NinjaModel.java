@@ -1,13 +1,10 @@
 package dev.java10.CadastroDeNinjas.Ninjas;
 
-import dev.java10.CadastroDeNinjas.Missoes.MissoesController;
 import dev.java10.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 @Entity
 @Table(name = "tb_cadastro")
@@ -28,6 +25,9 @@ public class NinjaModel {
 
     @Column(name = "img_url")
     private String imgUrl;
+
+    @Column(name = "rank")
+    private String rank;
 
     @Column(name = "idade")
     private int idade;

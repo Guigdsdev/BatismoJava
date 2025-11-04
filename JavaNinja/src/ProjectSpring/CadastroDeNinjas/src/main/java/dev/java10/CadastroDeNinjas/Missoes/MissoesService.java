@@ -4,29 +4,35 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class MissoesService {
     private MissoesRepository missoesRepository;
+    private MissoesMapper missoesMapper;
 
-    public MissoesService(MissoesRepository missoesRepository) {
+    public MissoesService(MissoesRepository missoesRepository, MissoesMapper missoesMapper) {
         this.missoesRepository = missoesRepository;
+        this.missoesMapper = missoesMapper;
     }
 
-    public List<MissoesModel> listarMissoes(){
-        return missoesRepository.findAll();
+    public List<MissoesDTO> listarMissoes(){
+        List<MissoesModel> missoes = missoesRepository.findAll();
+        return missoes.stream().map(missoesMapper::map).collect(Collectors.toList());
     }
 
-    public MissoesModel listarMissaoId(Long id){
+    public MissoesDTO listarMissaoId(Long id){
         Optional<MissoesModel> missoesId = missoesRepository.findById(id);
-        return missoesId.orElse(null);
+        return missoesId.map(missoesMapper::map).orElse(null);
     }
 
     public void deletarMissao(Long id){
         missoesRepository.deleteById(id);
     }
 
-    public MissoesModel adicionarMissao(MissoesModel missoesModel){
-        return missoesRepository.save(missoesModel);
+    public MissoesDTO adicionarMissao(MissoesDTO missoesDTO){
+        MissoesModel missao = missoesMapper.map(missoesDTO);
+        missoesRepository.save(missao);
+        return missoesMapper.map(missao);
     }
 }
