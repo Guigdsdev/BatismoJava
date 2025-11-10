@@ -40,11 +40,11 @@ public class NinjaController {
     }
 
     // Alterar ninjas
-    @PutMapping("/alterar/{id}")
-    public ResponseEntity<?> alterarInfoNinja(@PathVariable Long id, @RequestBody NinjaDTO ninjaAtualizado){
+    @PatchMapping("/alterar/{id}")
+    public ResponseEntity<?> alterarInfoNinja(@PathVariable Long id, @RequestBody NinjaDTO ninjaDTO){
         NinjaDTO ninja = ninjaService.listarNinjaId(id);
         if (ninja != null) {
-            ninja = ninjaService.alterarInfoNinja(id, ninjaAtualizado);
+            ninja = ninjaService.alterarInfoNinja(id, ninjaDTO);
             return ResponseEntity.ok(ninja);
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("O ninja de (ID) " + id + " não foi encontrado");
