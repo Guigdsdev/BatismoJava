@@ -2,7 +2,9 @@ package mapper;
 
 import DTOs.FoodDTO;
 import model.FoodModel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FoodMapper {
     public FoodModel map(FoodDTO foodDTO){
         FoodModel foodModel = new FoodModel();
