@@ -1,4 +1,4 @@
-package model;
+package dev.java10x.MagicFridgeAI.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

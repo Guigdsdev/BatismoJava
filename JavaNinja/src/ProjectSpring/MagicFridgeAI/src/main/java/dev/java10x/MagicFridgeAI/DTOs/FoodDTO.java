@@ -1,4 +1,4 @@
-package DTOs;
+package dev.java10x.MagicFridgeAI.DTOs;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;

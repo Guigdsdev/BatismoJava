@@ -1,6 +1,6 @@
-package controller;
+package dev.java10x.MagicFridgeAI.controller;
 
-import DTOs.FoodDTO;
+import dev.java10x.MagicFridgeAI.DTOs.FoodDTO;
 import dev.java10x.MagicFridgeAI.service.FoodService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

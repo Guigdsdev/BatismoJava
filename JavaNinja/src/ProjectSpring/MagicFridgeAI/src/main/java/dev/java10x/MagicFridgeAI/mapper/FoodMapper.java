@@ -1,7 +1,7 @@
-package mapper;
+package dev.java10x.MagicFridgeAI.mapper;
 
-import DTOs.FoodDTO;
-import model.FoodModel;
+import dev.java10x.MagicFridgeAI.DTOs.FoodDTO;
+import dev.java10x.MagicFridgeAI.model.FoodModel;
 import org.springframework.stereotype.Component;
 
 @Component

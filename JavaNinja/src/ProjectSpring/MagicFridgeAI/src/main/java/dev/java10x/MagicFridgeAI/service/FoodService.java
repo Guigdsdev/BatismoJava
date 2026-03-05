@@ -1,9 +1,9 @@
 package dev.java10x.MagicFridgeAI.service;
 
-import DTOs.FoodDTO;
+import dev.java10x.MagicFridgeAI.DTOs.FoodDTO;
 import dev.java10x.MagicFridgeAI.repository.FoodRepository;
-import mapper.FoodMapper;
-import model.FoodModel;
+import dev.java10x.MagicFridgeAI.mapper.FoodMapper;
+import dev.java10x.MagicFridgeAI.model.FoodModel;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
